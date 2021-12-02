@@ -58,18 +58,15 @@ const Navigation = () => {
         >
             <List>
                 <ListItem button >
-                    <ListItemText><Link className={mobileNavItem} to="/home">Home</Link></ListItemText>
-                </ListItem>
-                <ListItem button >
-                    <ListItemText><Link className={mobileNavItem} to="/login">Login</Link></ListItemText>
+                    <ListItemText><Link className={mobileNavItem} to="/">Resume</Link></ListItemText>
                 </ListItem>
                 <Divider />
                 <ListItem button >
-                    <ListItemText><Link className={mobileNavItem} to="/dashboard">Dashboard</Link></ListItemText>
+                    <ListItemText><Link className={mobileNavItem} to="/">Projects</Link></ListItemText>
                 </ListItem>
                 <Divider />
                 <ListItem button >
-                    <ListItemText><Link className={mobileNavItem} to="/explore">Explore</Link></ListItemText>
+                    <ListItemText><Link className={mobileNavItem} to="/">Contact</Link></ListItemText>
                 </ListItem>
                 <Divider />
             </List>
@@ -94,8 +91,10 @@ const Navigation = () => {
                                 <MenuIcon />
                             </IconButton>
                             <Typography style={{ textAlign: 'left' }} className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            <Typical
+                                <Typical
                                     steps={[
+                                        'HASIBUR😍', 1000,
+                                        'HASIBUR😍', 1000,
                                         'HASIBUR😍', 1000,
 
                                     ]}
@@ -103,9 +102,10 @@ const Navigation = () => {
                                 />
                             </Typography>
                             <Box className={navItemContainer}>
-                                <Link className={navItem} to="/home"><Button color="inherit">Home</Button></Link>
-                                <Link className={navItem} to="/explore"><Button color="inherit">Explore</Button></Link>
-                                <Link className={navItem} to="/purchase"><Button color="inherit">Purchase</Button></Link>
+                                <Link className={navItem} href="Resume.pdf" download="Hasib's Resume.pdf" to="/"><Button color="inherit">Resume</Button></Link>
+                                <Link className={navItem} to="/"><Button color="inherit">Projects</Button></Link>
+                                <Link className={navItem} to="/"><Button color="inherit">Testimonial</Button></Link>
+                                <Link className={navItem} to="/"><Button color="inherit">Contact</Button></Link>
                             </Box>
                         </Toolbar>
                     </Container>
