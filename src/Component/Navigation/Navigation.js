@@ -34,7 +34,7 @@ const Navigation = () => {
             },
         },
         bg: {
-            background: '#2c3e50 !important'
+            background: '#000 !important'
         },
         navLogo: {
             [theme.breakpoints.down('sm')]: {

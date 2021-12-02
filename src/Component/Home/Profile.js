@@ -1,4 +1,4 @@
-import { CardMedia, Container, Grid } from '@mui/material';
+import { Button, CardMedia, Container, Grid } from '@mui/material';
 import React from 'react';
 import Typical from 'react-typical'
 import img from '../../images/1.png';
@@ -7,22 +7,22 @@ import './Profile.css';
 const Profile = () => {
     return (
         <div className="profile-container">
-            <Container sx={{ py: 8, }}>
+            <Container sx={{ py: 8 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
                         <CardMedia
                             className="img-fluid"
                             component="img"
-                            height="550"
+                            height="400"
                             image={img}
                             alt="Hasib's Picture"
                         />
                     </Grid>
-                    <Grid item xs={12} md={6}>
-                        <div className="profile-details" >
-                            <div className="details">
-                                <div>
-                                    <div className="social-icon" >
+                    <Grid item xs={12} md={6} className="profile-details" >
+                        <div>
+                            <div className="details pb-5">
+                                <div className="pb-3">
+                                    <div className="social-icons" >
                                         <a href="https://github.com/Hasibur013" rel="noreferrer" target="_blank">
                                             <i className="fab fa-github"></i>
                                         </a>
@@ -37,16 +37,16 @@ const Profile = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="name-details">
+                                <div className="name-details my-3">
                                     <span className="primary-text">
-                                        {" "}
-                                        Hello, I am <span className="highlighted-text">Md. Hasibur Rahman</span>
+                                        <h4 className="introduction-text">
+                                            Hello, I am <span className="highlighted-text">Md. Hasibur Rahman</span>
+                                        </h4>
                                     </span>
                                 </div>
                                 <div className="role">
-                                    <span className="primary-text">
-                                        {" "}
-                                        <h1>
+                                    <span>
+                                        <h2 className="typical">
                                             <Typical
                                                 steps={[
                                                     'Md. Hasibur Rahman 😍', 1000,
@@ -58,18 +58,19 @@ const Profile = () => {
                                                 ]}
                                                 loop={Infinity}
                                             />
-                                        </h1>
-                                        <span className="role-tagline">
-                                            Build your Website using Raect , MongoDb, Express JS, Node JS
+                                        </h2>
+                                        <span className="role-tagline py-4">
+                                            <h3 className="introduction-text">
+                                                Build your Website using Raect , MongoDb, Express JS, Node JS
+                                            </h3>
                                         </span>
                                     </span>
                                 </div>
-                                <div className="resume-btn">
-                                    <button className="btn primary-btn">Hire me</button>
+                                <div className="resume-btn py-4">
+                                    <Button sx={{background: '#d35400'}} variant="contained">Hire Me</Button>
+                                    <span> </span>
                                     <a href="Resume.pdf" download="Hasib's Resume.pdf">
-                                        <button className="btn highlighted-btn">
-                                            Download Resume
-                                        </button>
+                                        <Button sx={{background: '#8e44ad'}} variant="contained">Download Resume</Button>
                                     </a>
                                 </div>
                             </div>

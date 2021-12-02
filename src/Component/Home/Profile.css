@@ -5,3 +5,38 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
+.profile-container{
+    background-image: url(../../images/bg.png);
+}
+.social-icons .fab, .fa{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.introduction-text{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: larger;
+    scroll-padding-left: 30px;
+    scroll-padding-right: 30px;
+}
+.highlighted-text{
+    color: #e67e22;
+    font-weight: 900;
+    font-size: larger;
+}
+.typical{
+    color: #f1c40f;
+    font-weight: 900;
+    font-size: larger;
+}
+a{
+    text-decoration: none;
+}
